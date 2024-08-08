@@ -5,7 +5,9 @@ const About = () => {
   return (
     <section className="bg-black text-green-400 py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-blue-800 mb-8">About CyberSec Club</h2>
+        <h2 className="text-3xl font-bold text-blue-800 mb-8">
+          About CyDef Club
+        </h2>
         <p className="text-lg mb-8">
           CyDef Club is a student-run organization dedicated to promoting and
           enhancing cybersecurity awareness and skills within our college
