@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header className="mb-8">
-      <div className="text-xl font-bold">> CyberSec_Club.exe</div>
+      <div className="text-xl font-bold"> CyDef.exe</div>
       <nav className="mt-4">
         <ul className="flex space-x-4">
           <li>

@@ -6,7 +6,7 @@ function TerminalHeader() {
         <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
         <div className="w-3 h-3 rounded-full bg-green-500"></div>
       </div>
-      <div>cybersec_club@localhost:~</div>
+      <div>cydef@localhost:~</div>
     </div>
   );
 }
