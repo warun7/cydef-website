@@ -10,8 +10,8 @@ import TerminalHeader from "./components/TerminalHeader";
 
 function App() {
   return (
-    <div className="min-h-screen bg-black text-green-400 font-['VictorMono_Nerd_Font'] p-4">
-      <div className="max-w-6xl mx-auto border border-green-400 rounded-md p-4">
+    <div className="min-h-screen bg-zinc-900 text-green-400 p-4">
+      <div className="max-w-6xl mx-auto border bg-black border-green-400 rounded-md p-4">
         {
           <>
             <TerminalHeader />

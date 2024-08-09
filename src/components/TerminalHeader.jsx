@@ -1,16 +1,17 @@
 function TerminalHeader() {
   return (
     <div className="flex justify-between items-center mb-4 border-b border-green-400 pb-2">
-      <div className="flex space-x-2">
-        <div className="w-3 h-3 rounded-full bg-red-500"></div>
-        <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-        <div className="w-3 h-3 rounded-full bg-green-500"></div>
+      <div className="flex space-x-2 items-center">
+        <i className="fa-solid fa-terminal"></i>
       </div>
-      <div>cydef@localhost:~</div>
+      <div className="flex justify-between items-center">~:zsh</div>
+      <div>
+        <i className="fa-solid fa-chevron-down"></i>
+        <i className="fa-solid fa-chevron-up px-2"></i>
+        <i className="fa-solid fa-xmark"></i>
+      </div>
     </div>
   );
 }
-
-
 
 export default TerminalHeader;
