@@ -1,9 +1,12 @@
 // About Section
 import React from "react";
 
+import SectionTitle from "./SectionTitle";
+
 const About = () => {
   return (
-    <section className="bg-black text-green-400 py-16">
+    <section>
+      <SectionTitle command="cat">about.txt</SectionTitle>
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-blue-800 mb-8">
           About CyDef Club

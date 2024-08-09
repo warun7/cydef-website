@@ -1,20 +1,38 @@
-import React from "react";
-
-const Header = () => {
+function Header() {
   return (
-    <header className="bg-black text-green-400 px-4 py-4 flex justify-between items-center">
-      <div className="text-xl font-bold">CyDef</div>
-      <nav>
-        <ul className="flex gap-4">
-          <li className="cursor-pointer hover:text-green-300">Home</li>
-          <li className="cursor-pointer hover:text-green-300">About</li>
-          <li className="cursor-pointer hover:text-green-300">Events</li>
-          <li className="cursor-pointer hover:text-green-300">Resources</li>
-          <li className="cursor-pointer hover:text-green-300">Contact</li>
+    <header className="mb-8">
+      <div className="text-xl font-bold">> CyberSec_Club.exe</div>
+      <nav className="mt-4">
+        <ul className="flex space-x-4">
+          <li>
+            <a href="#" className="hover:text-green-300">
+              cd /home
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:text-green-300">
+              cd /about
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:text-green-300">
+              cd /events
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:text-green-300">
+              cd /resources
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:text-green-300">
+              cd /contact
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
   );
-};
+}
 
 export default Header;

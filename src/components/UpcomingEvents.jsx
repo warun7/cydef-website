@@ -1,9 +1,11 @@
 // Upcoming Events Section
 import React from "react";
+import SectionTitle from "./SectionTitle";
 
 const UpcomingEvents = () => {
   return (
     <section className="bg-black text-green-400 py-16">
+      <SectionTitle command="ls">events/</SectionTitle>
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-blue-800">
           Upcoming Events
