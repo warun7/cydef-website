@@ -9,7 +9,7 @@ const Hero = () => {
         honing our skills and pushing the boundaries of what's possible in the
         digital world.
       </p>
-      <button className="bg-blue-700 text-white px-6 py-3 rounded-md font-bold hover:bg-blue-500 transition-colors">
+      <button className="bg-blue-800 text-white px-6 py-3 rounded-md font-bold hover:bg-blue-500 transition-colors">
         Join Our Next CTF Event
       </button>
     </section>

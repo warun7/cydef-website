@@ -19,7 +19,7 @@ const UpcomingEvents = () => {
               principles.
             </p>
             <p className="font-bold">Date: September 15, 2023</p>
-            <button className="bg-blue-700 text-white px-4 py-2 rounded-md font-bold hover:bg-blue-500 transition-colors mt-4">
+            <button className="bg-blue-800 text-white px-4 py-2 rounded-md font-bold hover:bg-blue-500 transition-colors mt-4">
               Register Now
             </button>
           </div>
