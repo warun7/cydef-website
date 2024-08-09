@@ -1,4 +1,3 @@
-// Upcoming Events Section
 import React from "react";
 import SectionTitle from "./SectionTitle";
 
@@ -25,7 +24,7 @@ const UpcomingEvents = () => {
               Register Now
             </button>
           </div>
-          {/* Add more upcoming event cards here */}
+          {/* New Events */}
         </div>
       </div>
     </section>

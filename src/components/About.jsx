@@ -1,4 +1,3 @@
-// About Section
 import React from "react";
 
 import SectionTitle from "./SectionTitle";
