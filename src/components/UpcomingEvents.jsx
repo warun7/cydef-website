@@ -22,7 +22,7 @@ const UpcomingEvents = () => {
               a strong foundation in hacking techniques and cybersecurity
               principles.
             </p>
-            <p className="font-bold">Date: September 15, 2023</p>
+            <p className="font-bold">Date: September 15, 2024</p>
             <button className="bg-blue-800 text-white px-2 sm:px-4 py-1 sm:py-2 rounded-md font-bold hover:bg-blue-500 transition-colors mt-2 sm:mt-4">
               Register Now
             </button>
