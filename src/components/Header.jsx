@@ -1,9 +1,9 @@
 function Header() {
   return (
-    <header className="mb-8">
-      <div className="text-xl font-bold"> CyDef.exe</div>
-      <nav className="mt-4">
-        <ul className="flex space-x-4">
+    <header className="mb-4 sm:mb-8">
+      <div className="text-lg sm:text-xl font-bold">CyDef.exe</div>
+      <nav className="mt-2 sm:mt-4">
+        <ul className="flex flex-wrap space-x-2 sm:space-x-4">
           <li>
             <a href="#hero" className="hover:text-green-300">
               cd /home

@@ -6,16 +6,15 @@ import UpcomingEvents from "./components/UpcomingEvents";
 import Resources from "./components/Resources";
 import Footer from "./components/Footer";
 import TerminalHeader from "./components/TerminalHeader";
-// import BlinkingCursor from "./components/BlinkingCrusor";
+// import BlinkingCursor from "./components/BlinkingCursor";
 
 function App() {
   return (
-    <div className="min-h-screen bg-zinc-900 text-green-400 p-4">
-      <div className="max-w-6xl mx-auto border bg-black border-green-400 rounded-md p-4">
+    <div className="min-h-screen bg-zinc-900 text-green-400 p-2 sm:p-4">
+      <div className="max-w-6xl mx-auto border bg-black border-green-400 rounded-md p-2 sm:p-4">
         {
           <>
             <TerminalHeader />
-            {/* <BlinkingCursor /> */}
             <Header />
             <Hero />
             <About />
