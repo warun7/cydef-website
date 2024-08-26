@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="bg-black text-green-400 py-20 flex flex-col items-center justify-center">
+    <section id="hero" className="bg-black text-green-400 py-20 flex flex-col items-center justify-center">
       <h1 className="text-4xl font-bold mb-4">Welcome to <span className="text-blue-900 bold">CyDef</span></h1>
       <p className="text-lg mb-8 max-w-2xl text-center">
         We're a group of passionate cybersecurity enthusiasts dedicated to
