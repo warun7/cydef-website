@@ -20,6 +20,12 @@ const Footer = () => {
           <a href="#" className="text-blue-600 hover:text-blue-300">
             Discord
           </a>
+          <a
+            href="https://www.instagram.com/cydef.plaksha/"
+            className="text-blue-600 hover:text-blue-300"
+          >
+            Instagram
+          </a>
         </div>
       </div>
     </footer>
