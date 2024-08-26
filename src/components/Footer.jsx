@@ -11,7 +11,10 @@ const Footer = () => {
           <a href="#" className="text-blue-600 hover:text-blue-300">
             Twitter
           </a>
-          <a href="#" className="text-blue-600 hover:text-blue-300">
+          <a
+            href="https://github.com/CyDef-Plaksha"
+            className="text-blue-600 hover:text-blue-300"
+          >
             GitHub
           </a>
           <a href="#" className="text-blue-600 hover:text-blue-300">
