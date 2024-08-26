@@ -13,7 +13,7 @@ const TerminalHeader = () => {
   };
 
   const handleXmarkClick = () => {
-    alert("Nice try! You can't close this terminal 😜");
+    alert("Nice try! You can't close this terminal sucker");
   };
 
   const handleZshClick = () => {
