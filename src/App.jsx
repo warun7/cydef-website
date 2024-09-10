@@ -9,33 +9,37 @@ import Footer from "./components/Footer";
 import TerminalHeader from "./components/TerminalHeader";
 import UpPage from "./components/UpPage";
 import DownPage from "./components/DownPage";
+import HackerBackground from "./components/HackerBackground"; // Import the new component
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen bg-zinc-900 text-green-400 p-4">
-        <div className="max-w-6xl mx-auto border bg-black border-green-400 rounded-md p-4">
-          <TerminalHeader />
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <Header />
-                  <Hero />
-                  <About />
-                  <UpcomingEvents />
-                  <Resources />
-                  <Footer />
-                </>
-              }
-            />
-            <Route path="/up" element={<UpPage />} />
-            <Route path="/down" element={<DownPage />} />
-          </Routes>
+    <div className="relative">
+      <Router>
+        <HackerBackground />
+        <div className="relative min-h-screen bg-transparent text-green-400 p-4 z-10">
+          <div className="max-w-6xl mx-auto border bg-black border-green-400 rounded-md p-4">
+            <TerminalHeader />
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <>
+                    <Header />
+                    <Hero />
+                    <About />
+                    <UpcomingEvents />
+                    <Resources />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route path="/up" element={<UpPage />} />
+              <Route path="/down" element={<DownPage />} />
+            </Routes>
+          </div>
         </div>
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 

@@ -23,3 +23,41 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #00cc00;
 }
+
+/* Add this at the end of your CSS file */
+@keyframes hacker {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+.hacker-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.hacker-background span {
+  position: absolute;
+  top: -100%;
+  width: 1px;
+  height: 100%;
+  background-color: #0F0;
+  animation: hacker 5s linear infinite;
+}
+
+.hacker-background span:nth-child(odd) {
+  animation-duration: 7s;
+}
+
+.hacker-background span:nth-child(even) {
+  animation-duration: 3s;
+}
