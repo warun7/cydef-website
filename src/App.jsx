@@ -17,7 +17,7 @@ function App() {
       <Router>
         <HackerBackground />
         <div className="relative min-h-screen bg-transparent text-green-400 p-4 z-10">
-          <div className="max-w-6xl mx-auto border bg-black border-green-400 rounded-md p-4">
+          <div className="max-w-6xl mx-auto border bg-black border-green-400 rounded-md p-4 opacity-90 backdrop-blur-3xl background-blur">
             <TerminalHeader />
             <Routes>
               <Route

@@ -1,4 +1,4 @@
- import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const HackerBackground = () => {
   const canvasRef = useRef(null);
@@ -15,7 +15,15 @@ const HackerBackground = () => {
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
 
-    const columns = Math.floor(canvas.width / 20);
+    const getFontSize = () => {
+      return window.innerWidth < 768 ? 10 : 15;
+    };
+
+    const getColumnWidth = () => {
+      return window.innerWidth < 768 ? 12 : 20;
+    };
+
+    const columns = Math.floor(canvas.width / getColumnWidth());
     const drops = Array(columns).fill(1);
 
     const drawMatrix = () => {
@@ -23,13 +31,15 @@ const HackerBackground = () => {
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       ctx.fillStyle = '#0F0';
-      ctx.font = '15px monospace';
+      ctx.font = `${getFontSize()}px monospace`;
+
+      const columnWidth = getColumnWidth();
 
       drops.forEach((drop, i) => {
         const text = String.fromCharCode(Math.random() * 128);
-        ctx.fillText(text, i * 20, drop * 20);
+        ctx.fillText(text, i * columnWidth, drop * columnWidth);
 
-        if (drop * 20 > canvas.height && Math.random() > 0.975) {
+        if (drop * columnWidth > canvas.height && Math.random() > 0.975) {
           drops[i] = 0;
         }
         drops[i]++;
