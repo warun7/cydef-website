@@ -9,7 +9,9 @@ import Footer from "./components/Footer";
 import TerminalHeader from "./components/TerminalHeader";
 import UpPage from "./components/UpPage";
 import DownPage from "./components/DownPage";
-import HackerBackground from "./components/HackerBackground"; // Import the new component
+import HackerBackground from "./components/HackerBackground";
+import EventsPage from "./components/EventsPage";
+import PastEvents from "./components/PastEvents";
 
 function App() {
   return (
@@ -28,6 +30,7 @@ function App() {
                     <Hero />
                     <About />
                     <UpcomingEvents />
+                    <PastEvents />
                     <Resources />
                     <Footer />
                   </>
@@ -35,6 +38,21 @@ function App() {
               />
               <Route path="/up" element={<UpPage />} />
               <Route path="/down" element={<DownPage />} />
+              <Route path="/events" element={<EventsPage />} />
+              <Route
+                path="/events/past"
+                element={<EventsPage events="past" />}
+              />
+              <Route
+                path="*"
+                element={
+                  <>
+                    <h1 className="text-2xl sm:text-3xl font-bold text-blue-800 text-center">
+                      404: Page not found
+                    </h1>
+                  </>
+                }
+              />
             </Routes>
           </div>
         </div>

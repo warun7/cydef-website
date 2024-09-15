@@ -1,0 +1,23 @@
+{
+  "upcomingEvents": [
+    {
+      "title": "CTF: Beginner Friendly",
+      "description": "Get ready to flex your hacking and problem-solving skills in this awesome CTF competition. Take on fun challenges and see how far your cybersecurity game can go!",
+      "date": "September 21, 2024 2:30 PM",
+      "registrationLink": "https://www.google.com",
+      "poster": "eventPosters/CTFBeginnerFriendly.jpg"
+    }
+  ],
+  "pastEvents": [
+    {
+      "title": "CTF: Cryptography Challenge",
+      "description": "Our recent CTF event focused on challenging participants to solve complex cryptography puzzles and demonstrate their skills in this crucial cybersecurity domain.",
+      "link": "#"
+    },
+    {
+      "title": "CTF: Hacking Fundamentals",
+      "description": "Join us for a hands-on Capture the Flag event focused on building a strong foundation in hacking techniques and cybersecurity principles.",
+      "link": "#"
+    }
+  ]
+}
