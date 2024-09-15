@@ -19,7 +19,7 @@ const EventsWithPoster = () => {
               key={index}
               className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-8"
             >
-              {/* Text Section (Left on large screens, below poster on mobile) */}
+              {/* Text Section (Left on large screens, above poster on mobile) */}
               <div className="space-y-4 sm:space-y-6">
                 <h2 className="text-2xl sm:text-3xl font-bold text-blue-800">
                   {event.title}
@@ -34,7 +34,7 @@ const EventsWithPoster = () => {
                 </a>
               </div>
 
-              {/* Poster Section (Right on large screens, above text on mobile) */}
+              {/* Poster Section (Right on large screens, below text on mobile) */}
               <div className="w-full h-full">
                 <img
                   src={event.poster}
