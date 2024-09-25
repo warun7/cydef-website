@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -13,6 +12,7 @@ import HackerBackground from "./components/HackerBackground";
 import EventsPage from "./components/EventsPage";
 import PastEvents from "./components/PastEvents";
 import EggHuntPage from "./components/EggHunt";
+import ResourcePage from "./components/ResourcePage";
 
 function App() {
   return (
@@ -45,14 +45,13 @@ function App() {
                 element={<EventsPage events="past" />}
               />
               <Route path="/egg-hunt" element={<EggHuntPage />} />
+              <Route path="/resources" element={<ResourcePage />} />{" "}
               <Route
                 path="*"
                 element={
-                  <>
-                    <h1 className="text-2xl sm:text-3xl font-bold text-blue-800 text-center">
-                      404: Page not found
-                    </h1>
-                  </>
+                  <h1 className="text-2xl sm:text-3xl font-bold text-blue-800 text-center">
+                    404: Page not found
+                  </h1>
                 }
               />
             </Routes>

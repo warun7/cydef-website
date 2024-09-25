@@ -1,0 +1,44 @@
+{
+  "tryhackme": [
+    {
+      "title": "TryHackMe",
+      "url": "https://tryhackme.com/",
+      "description": "Interactive cybersecurity training and virtual labs."
+    }
+  ],
+  "hackthebox": [
+    {
+      "title": "HackTheBox",
+      "url": "https://www.hackthebox.com/",
+      "description": "Penetration testing labs and cybersecurity challenges."
+    }
+  ],
+  "coursera-cybersecurity-cert-from-google": [
+    {
+      "title": "Coursera Cybersecurity Certificate from Google",
+      "url": "https://www.coursera.org/professional-certificates/google-cybersecurity",
+      "description": "Learn cybersecurity fundamentals and earn a certificate."
+    }
+  ],
+  "pico-ctf": [
+    {
+      "title": "PicoCTF",
+      "url": "https://picoctf.org/",
+      "description": "CTF competition platform for students and beginners."
+    }
+  ],
+  "isc2": [
+    {
+      "title": "ISC2 Free Entry Level Certification Training + Exam",
+      "url": "https://www.isc2.org/landing/1mcc",
+      "description": "Entry-level cybersecurity certification and training."
+    }
+  ],
+  "junior-penetration-tester": [
+    {
+      "title": "Junior Penetration Tester Certification",
+      "url": "https://security.ine.com/certifications/ejpt-certification/",
+      "description": "Certification for those pursuing a career in pen testing."
+    }
+  ]
+}
