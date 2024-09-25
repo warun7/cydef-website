@@ -1,11 +1,11 @@
 {
   "upcomingEvents": [
     {
-      "title": "CTF: Beginner Friendly",
-      "description": "Get ready to flex your hacking and problem-solving skills in this awesome CTF competition. Take on fun challenges and see how far your cybersecurity game can go!",
-      "date": "September 21, 2024 2:30 PM",
-      "registrationLink": "#",
-      "poster": "eventPosters/CTFBeginnerFriendly.jpg"
+      "title": "Cyber Egg Hunt",
+      "description": "Exciting website launch event with prizes! Top 3 winners name's will be displayed on our website indefinitely.",
+      "date": "Sept. 28th, 5pm - 29th, Sept. 5pm (24 hours)",
+      "registrationLink": "/egg-hunt",
+      "poster": "eventPosters/EggHunt.png"
     }
   ],
   "pastEvents": [

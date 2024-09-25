@@ -12,6 +12,7 @@ import DownPage from "./components/DownPage";
 import HackerBackground from "./components/HackerBackground";
 import EventsPage from "./components/EventsPage";
 import PastEvents from "./components/PastEvents";
+import EggHuntPage from "./components/EggHunt";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
                 path="/events/past"
                 element={<EventsPage events="past" />}
               />
+              <Route path="/egg-hunt" element={<EggHuntPage />} />
               <Route
                 path="*"
                 element={
