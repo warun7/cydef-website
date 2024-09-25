@@ -1,5 +1,3 @@
-import React from "react";
-
 const UpPage = () => {
   return (
     <div className="min-h-screen bg-zinc-900 text-green-400 flex items-center justify-center">

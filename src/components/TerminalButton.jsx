@@ -1,5 +1,3 @@
-import React from "react";
-
 const TerminalButton = ({ children, onClick, command = "./execute" }) => {
   return (
     <button

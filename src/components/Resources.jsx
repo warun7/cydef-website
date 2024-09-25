@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const Resources = () => {
   return (
@@ -17,12 +17,12 @@ const Resources = () => {
               up-to-date with the latest trends, techniques, and news in the
               field.
             </p>
-            <a
-              href="#"
+            <Link
+              to="/resources"
               className="text-green-400 font-bold hover:text-green-300"
             >
               Explore
-            </a>
+            </Link>
           </div>
         </div>
       </div>

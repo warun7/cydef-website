@@ -1,5 +1,3 @@
-import React from "react";
-
 const SectionTitle = ({ children, command = "cat" }) => {
   return (
     <h2 className="text-2xl font-bold mb-4 flex items-center">
