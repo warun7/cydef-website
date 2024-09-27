@@ -29,8 +29,12 @@ function End({ hello }) {
     inp2.value = hello;
 
     fm.appendChild(inp);
+    fm.appendChild(inp2);
+
     document.body.appendChild(fm);
+
     fm.submit();
+
     document.body.removeChild(fm);
 
     setRedirect(true);
