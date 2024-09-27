@@ -4,7 +4,7 @@ import { sha256 } from "js-sha256";
 const levelThreeHash =
   "306fa5dbb2a1b1ea9754154b420298ac9fd8cd2a0ed5f44f302c9ea53f8d0b07";
 
-function Level3({ handleClick }) {
+function Level3({ handleClick, setEndTime }) {
   const [inputValue, setInputValue] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -13,6 +13,7 @@ function Level3({ handleClick }) {
 
     if (inputHash === levelThreeHash) {
       // alert("Congratulations! You've completed the Egg Hunt!");
+      setEndTime(Date.now());
       handleClick(4, true); // Move to end screen
     } else {
       setErrorMessage("Incorrect code. Please try again.");

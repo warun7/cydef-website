@@ -9,6 +9,8 @@ import { useState } from "react";
 function EggHuntPage() {
   const [level, setLevel] = useState(0);
   const [hello, setHello] = useState(false);
+  const [startTime, setStartTime] = useState(0);
+  const [endTime, setEndTime] = useState(0);
 
   function handleClick(lvl, hello1) {
     setLevel(lvl);
@@ -18,11 +20,17 @@ function EggHuntPage() {
   return (
     <>
       <div className="text-center py-4">
-        {level === 0 && <Intro handleClick={handleClick} />}
+        {level === 0 && (
+          <Intro handleClick={handleClick} setStartTime={setStartTime} />
+        )}
         {level === 1 && <Level1 handleClick={handleClick} />}
         {level === 2 && <Level2 handleClick={handleClick} />}
-        {level === 3 && <Level3 handleClick={handleClick} />}
-        {level === 4 && <End hello={hello}/>}
+        {level === 3 && (
+          <Level3 handleClick={handleClick} setEndTime={setEndTime} />
+        )}
+        {level === 4 && (
+          <End hello={hello} duration={(endTime - startTime) / 1000} />
+        )}
       </div>
     </>
   );

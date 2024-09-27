@@ -44,7 +44,7 @@ function App() {
                 path="/events/past"
                 element={<EventsPage events="past" />}
               />
-              <Route path="/egg-hunt" element={<EggHuntPage />} />
+              {/* <Route path="/egg-hunt" element={<EggHuntPage />} /> */}
               <Route
                 path="/egg-hunt"
                 element={

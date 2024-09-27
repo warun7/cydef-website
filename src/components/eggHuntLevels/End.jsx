@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import { Navigate } from "react-router-dom";
 
-function End({ hello }) {
+function End({ hello, duration }) {
   const [name, setName] = useState("");
   const [redirect, setRedirect] = useState(false);
-
-  console.log(hello);
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -28,14 +26,22 @@ function End({ hello }) {
     inp2.name = "hello";
     inp2.value = hello;
 
+    const imp3 = document.createElement("input");
+    imp3.type = "hidden";
+    imp3.name = "duration";
+    imp3.value = duration;
+
     fm.appendChild(inp);
     fm.appendChild(inp2);
+    fm.appendChild(imp3);
 
     document.body.appendChild(fm);
 
     fm.submit();
 
     document.body.removeChild(fm);
+
+    console.log(duration);
 
     setRedirect(true);
   }

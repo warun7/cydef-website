@@ -1,6 +1,6 @@
 import React from "react";
 
-function Intro({ handleClick }) {
+function Intro({ handleClick, setStartTime }) {
   return (
     <>
       <h1 className="text-2xl sm:text-3xl font-bold text-blue-800 text-center">
@@ -19,7 +19,10 @@ function Intro({ handleClick }) {
         </div>
         <div className="space-x-4 space-y-4 py-4">
           <button
-            onClick={() => handleClick(1, true)}
+            onClick={() => {
+              handleClick(1, true);
+              setStartTime(Date.now());
+            }}
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           >
             Start Egg Hunt

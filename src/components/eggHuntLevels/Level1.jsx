@@ -8,9 +8,9 @@ const levelOneHash =
 function Level1({ handleClick }) {
   useEffect(() => {
     const interval = setInterval(() => {
-      console.clear();
+      // console.clear();
       console.log("Egg Hunt Code: youjustneededtolookaround");
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
