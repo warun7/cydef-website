@@ -13,7 +13,7 @@ function Level3({ handleClick }) {
 
     if (inputHash === levelThreeHash) {
       alert("Congratulations! You've completed the Egg Hunt!");
-      handleClick(0); // Move back to intro
+      handleClick(4); // Move to end screen
     } else {
       setErrorMessage("Incorrect code. Please try again.");
     }

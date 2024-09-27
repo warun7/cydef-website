@@ -30,7 +30,8 @@ const EventsWithPoster = () => {
                   href={event.registrationLink}
                   className="inline-block bg-blue-800 text-white px-4 py-2 rounded-md font-bold hover:bg-blue-500 transition-colors"
                 >
-                  Register Now
+                  {/* Register Now */}
+                  Play Now
                 </a>
               </div>
 
