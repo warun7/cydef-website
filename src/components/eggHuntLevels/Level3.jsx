@@ -12,8 +12,8 @@ function Level3({ handleClick }) {
     const inputHash = sha256(inputValue);
 
     if (inputHash === levelThreeHash) {
-      alert("Congratulations! You've completed the Egg Hunt!");
-      handleClick(4); // Move to end screen
+      // alert("Congratulations! You've completed the Egg Hunt!");
+      handleClick(4, true); // Move to end screen
     } else {
       setErrorMessage("Incorrect code. Please try again.");
     }

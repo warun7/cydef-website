@@ -19,7 +19,7 @@ function Intro({ handleClick }) {
         </div>
         <div className="space-x-4 space-y-4 py-4">
           <button
-            onClick={() => handleClick(1)}
+            onClick={() => handleClick(1, true)}
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           >
             Start Egg Hunt

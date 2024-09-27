@@ -8,9 +8,11 @@ import { useState } from "react";
 
 function EggHuntPage() {
   const [level, setLevel] = useState(0);
+  const [hello, setHello] = useState(false);
 
-  function handleClick(lvl) {
+  function handleClick(lvl, hello1) {
     setLevel(lvl);
+    setHello(hello1);
   }
 
   return (
@@ -20,7 +22,7 @@ function EggHuntPage() {
         {level === 1 && <Level1 handleClick={handleClick} />}
         {level === 2 && <Level2 handleClick={handleClick} />}
         {level === 3 && <Level3 handleClick={handleClick} />}
-        {level === 4 && <End />}
+        {level === 4 && <End hello={hello}/>}
       </div>
     </>
   );

@@ -12,7 +12,7 @@ function Level2({ handleClick }) {
     const inputHash = sha256(inputValue.toUpperCase());
 
     if (inputHash === levelTwoHash) {
-      handleClick(3); // Move to level 3
+      handleClick(3, true); // Move to level 3
     } else {
       setErrorMessage("Incorrect code. Please try again.");
     }

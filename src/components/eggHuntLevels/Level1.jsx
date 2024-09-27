@@ -22,7 +22,7 @@ function Level1({ handleClick }) {
     const inputHash = sha256(inputValue);
 
     if (inputHash === levelOneHash) {
-      handleClick(2); // Move to level 2
+      handleClick(2, true); // Move to level 2
     } else {
       setErrorMessage("Incorrect code. Please try again.");
     }

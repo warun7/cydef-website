@@ -1,29 +1,43 @@
 import React, { useState } from "react";
 import { Navigate } from "react-router-dom";
 
-function End() {
+function End({ hello }) {
   const [name, setName] = useState("");
   const [redirect, setRedirect] = useState(false);
 
-  function handleSubmit() {
+  console.log(hello);
+
+  function handleSubmit(event) {
+    event.preventDefault();
     if (name === "") {
       alert("Please enter your full name.");
       return;
     }
 
-    alert(
-      "Thank you for participating. Your position on the leaderboard will be displayed shortly."
-    );
+    const fm = document.createElement("form");
+    fm.method = "POST";
+    fm.action = "/vals";
 
-    // Make API call here
+    const inp = document.createElement("input");
+    inp.type = "hidden";
+    inp.name = "name";
+    inp.value = name;
 
-    // Set redirect state to true
+    const inp2 = document.createElement("input");
+    inp2.type = "hidden";
+    inp2.name = "hello";
+    inp2.value = hello;
+
+    fm.appendChild(inp);
+    document.body.appendChild(fm);
+    fm.submit();
+    document.body.removeChild(fm);
+
     setRedirect(true);
   }
 
-  // Redirect when redirect state is true
   if (redirect) {
-    return <Navigate replace={true} to="/" />;
+    return <Navigate replace={true} to="/leaderboard" />;
   }
 
   return (
