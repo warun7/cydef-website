@@ -14,11 +14,18 @@ const Hero = () => {
         honing our skills and pushing the boundaries of what's possible in the
         digital world.
       </p>
-      <Link to="/egg-hunt">
-        <button className="bg-blue-800 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-md font-bold hover:bg-blue-500 transition-colors">
-          Play Egg Hunt
-        </button>
-      </Link>
+      <div className="align-middle space-x-2">
+        <Link to="/egg-hunt">
+          <button className="bg-blue-800 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-md font-bold hover:bg-blue-500 transition-colors">
+            Play Egg Hunt
+          </button>
+        </Link>
+        <Link to="/leaderboard">
+          <button className="bg-blue-800 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-md font-bold hover:bg-blue-500 transition-colors">
+            Leaderboard
+          </button>
+        </Link>
+      </div>
     </section>
   );
 };
