@@ -26,23 +26,27 @@ const EventsWithPoster = () => {
                 </h2>
                 <p className="text-lg sm:text-xl">{event.description}</p>
                 <p className="font-bold text-green-300">Date: {event.date}</p>
-                <a
-                  href={event.registrationLink}
-                  className="inline-block bg-blue-800 text-white px-4 py-2 rounded-md font-bold hover:bg-blue-500 transition-colors"
-                >
-                  {/* Register Now */}
-                  Play Now
-                </a>
+                {event.registrationLink && (
+                  <a
+                    href={event.registrationLink}
+                    className="inline-block bg-blue-800 text-white px-4 py-2 rounded-md font-bold hover:bg-blue-500 transition-colors"
+                  >
+                    Register Now
+                    {/* Play Now */}
+                  </a>
+                )}
               </div>
 
               {/* Poster Section (Right on large screens, below text on mobile) */}
-              <div className="w-full h-full">
-                <img
-                  src={event.poster}
-                  alt={event.title}
-                  className="object-cover w-full h-full rounded-lg shadow-lg"
-                />
-              </div>
+              {event.poster && (
+                <div className="w-full h-full">
+                  <img
+                    src={event.poster}
+                    alt={event.title}
+                    className="object-cover w-full h-full rounded-lg shadow-lg"
+                  />
+                </div>
+              )}
             </div>
           ))
         ) : (

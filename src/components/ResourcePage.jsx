@@ -1,7 +1,16 @@
 import PropTypes from "prop-types";
-import resourcesData from "../../public/resources.json";
+import { useState, useEffect } from "react";
 
 function ResourcePage() {
+  const [resourcesData, setResourcesData] = useState([]);
+
+  useEffect(() => {
+    fetch("resources.json")
+      .then((response) => response.json())
+      .then((data) => setResourcesData(data))
+      .catch((error) => console.error("Error loading resources data:", error));
+  }, []);
+
   const categories = Object.keys(resourcesData);
 
   return (

@@ -11,7 +11,6 @@ import DownPage from "./components/DownPage";
 import HackerBackground from "./components/HackerBackground";
 import EventsPage from "./components/EventsPage";
 import PastEvents from "./components/PastEvents";
-import EggHuntPage from "./components/EggHunt";
 import ResourcePage from "./components/ResourcePage";
 
 function App() {
@@ -39,20 +38,11 @@ function App() {
               />
               <Route path="/up" element={<UpPage />} />
               <Route path="/down" element={<DownPage />} />
-              <Route path="/events" element={<EventsPage />} />
               <Route
                 path="/events/past"
                 element={<EventsPage events="past" />}
               />
-              {/* <Route path="/egg-hunt" element={<EggHuntPage />} /> */}
-              <Route
-                path="/egg-hunt"
-                element={
-                  <h1 className="text-2xl sm:text-3xl font-bold text-blue-800 text-center">
-                    Coming Soon!
-                  </h1>
-                }
-              />
+              <Route path="/events" element={<EventsPage />} />
               <Route path="/resources" element={<ResourcePage />} />{" "}
               <Route
                 path="*"
